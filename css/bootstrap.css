@@ -42,7 +42,7 @@
 }
 
 @font-face {
-    font-family: HappyTimes;
+    font-family: "HappyTimes";
     src: url(fonts/happy-times-at-the-ikob-webfont.woff2) format('woff2'),
          url(fonts/happy-times-at-the-ikob-webfont.woff) format('woff');
     font-weight:normal;
@@ -50,7 +50,7 @@
 }
 
 @font-face {
-    font-family: HappyTimes;
+    font-family: "HappyTimes";
     src: url(fonts/happy-times-at-the-ikob_italic-webfont.woff2) format('woff2'),
          url(fonts/happy-times-at-the-ikob_italic-webfont.woff) format('woff');
     font-weight:normal;
@@ -96,7 +96,7 @@ hr {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: HappyTimes !important;
+  font-family: "HappyTimes" !important;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
