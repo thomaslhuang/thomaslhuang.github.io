@@ -1,0 +1,13 @@
+@font-face {
+	font-family: HappyTimes;
+	src: url(happy-times-at-the-ikob-webfont.woff2);
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: HappyTimes;
+	src: url(happy-times-at-the-ikob_italic-webfont.woff2);
+	font-weight: normal;
+	font-style: italic;
+}
