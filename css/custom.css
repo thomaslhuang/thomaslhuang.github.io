@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "HappyTimes";
+	src: url("fonts/happy-times-at-the-ikob-webfont.woff2");
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+    font-family: "HappyTimes";
+	src: url("fonts/happy-times-at-the-ikob_italic-webfont.woff2");
+	font-weight: normal;
+	font-style: italic;
+}
+
+h1, h2, h3 {font-family: "HappyTimes", serif;}
+p {font-family: "neue-haas-grotesk-text", sans-serif;}
+a {
+	color: black;
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	text-decoration: none;
+	border-bottom: 1.5px solid #CCCCCC;
+}
+a:hover {
+	color: black;
+	font-family: "neue-haas-grotesk-text", sans-serif;
+	text-decoration: none;
+	border-bottom: 1.5px solid #CCCCCC;
+}
