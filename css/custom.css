@@ -1,3 +1,9 @@
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 0.8rem;
+  }
+}
+
 @font-face {
     font-family: "HappyTimes";
 	src: url("fonts/happy-times-at-the-ikob-webfont.woff2") format("woff2"),
