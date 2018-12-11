@@ -1,14 +1,14 @@
 @font-face {
     font-family: "HappyTimes";
-	src: url("../fonts/happy-times-at-the-ikob-webfont.woff2") format("woff2"),
-         url("../fonts/happy-times-at-the-ikob-webfont.woff") format("woff");
+	src: url("fonts/happy-times-at-the-ikob-webfont.woff2") format("woff2"),
+         url("fonts/happy-times-at-the-ikob-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
     font-family: "HappyTimes";
-	src: url("../fonts/happy-times-at-the-ikob_italic-webfont.woff2") format("woff2"),
-         url("../fonts/happy-times-at-the-ikob_italic-webfont.woff") format("woff");
+	src: url("fonts/happy-times-at-the-ikob_italic-webfont.woff2") format("woff2"),
+         url("fonts/happy-times-at-the-ikob_italic-webfont.woff") format("woff");
 	font-weight: normal;
 	font-style: italic;
 }
