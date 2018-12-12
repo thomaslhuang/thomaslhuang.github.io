@@ -1,7 +1,7 @@
 $("body a").on("click", function(event){
 	event.preventDefault()
 
-	const href = $(this).attribute("href")
+	const href = $(this).attr("href")
 
 	window.history.pushState(null, null, href)
 
