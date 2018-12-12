@@ -8,12 +8,12 @@ $("a").on("click", function(event){
 	$.ajax({
 		url: href,
 		success: function(data){
-			$("body").fadeOut(500, function(){
-				const newPage = $(data).filter("body").html()
+			$(".container-fluid").fadeOut(500, function(){
+				const newPage = $(data).filter(".container-fluid").html()
 
-				$("body").html(newPage)
+				$(".container-fluid").html(newPage)
 
-				$("body").fadeIn(500)
+				$(".container-fluid").fadeIn(500)
 			})
 		}
 	})
