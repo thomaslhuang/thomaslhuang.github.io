@@ -26,16 +26,38 @@
 							Senior Thesis, Computing and the Arts</h1>
 					</div>
 				</div>
+				<div class="row justify-content-center">
+					<div class="col mt-5 mb-5">
+						<img src="img/where00.jpg" class="img-fluid" alt="Responsive image">
+					</div>
+				</div>
 				<div class="row">
 					<div class="col mt-5 mb-5">
 					  <h1 class="pb-3">?Where is a project about form and figure, about surveillance and accumulation. Designed and built for <i>Halves: Senior Thesis Works in Progress</i>, and installed in the Yale School of Art Green Gallery.</h1>
 					  <h1>?Where utilizes two <i>Raspberry Pi Zero Ws</i>, one attached to a camera on a balcony overlooking the gallery space, and another connected to a thermal receipt printer located more centrally in the gallery.</h1>
 					</div>
 				</div>
+				<div class="row justify-content-center">
+					<div class="col col-md-6 mt-5 mb-5">
+						<img src="img/where02.jpg" class="img-fluid" alt="Responsive image">
+					</div>
+				</div>
 				<div class="row">
 					<div class="col mt-5 mb-5">
 					  <h1 class="pb-3">Every thirty seconds, the camera takes a photo of the gallery and compares it to an initial image of the space. Then a mask is created<sup>1</sup>, isolating any new objects that have entered the space, highlighting the discrepancies between the two photos.</h1>
 					  <h1>The mask is then uploaded to Dropbox, where the Pi attached to the printer periodically checks to see if a new image has been uploaded. When it finds a new mask, the image is downloaded and printed, creating a relatively accurate snapshot of the gallery at that moment.<sup>2,3</sup></h1>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col mt-5 mb-5">
+						<img src="img/where03.jpg" class="img-fluid" alt="Responsive image">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col mt-5 mb-5">
+					  <h1 class="pb-3">1&emsp;The mask is created by subtracting the new image from the initial image, and then thresholding the result.</h1>
+					  <h1 class="pb-3">2&emsp;Both the camera and printer scripts were written in Python. The <i>Dropbox-Uploader</i> bash script used in these scripts to upload and retrieve masks was written by Andrea Fabrizi.</h1>
+					  <h1>3&emsp;Materials: Raspberry Pi Zero W, thermal printer, thermal printer paper.</h1>
 					</div>
 				</div>
 				<div class="row">
