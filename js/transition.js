@@ -12,7 +12,7 @@ $("body").on("click", "a", function(event){
 				$(".container-fluid").fadeOut(500, function(){
 					const newPage = $(data).filter(".container-fluid").html()
 
-					$(".container-fluid").html(newPage)
+					$(".container-fluid").html(newPage).scrollTop(0)
 
 					$(".container-fluid").fadeIn(500)
 				})
