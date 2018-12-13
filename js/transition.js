@@ -1,7 +1,3 @@
-$(window).on('popstate', function(event){
-	window.history.back();
-})
-
 $("body").on("click", "a", function(event){
 	if (!$(event.target).is(".external")){
 		event.preventDefault()
