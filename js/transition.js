@@ -1,4 +1,4 @@
-$("body").on("click", "a", function(event){
+$("body").not('.external').on("click", "a", function(event){
 	event.preventDefault()
 
 	const href = $(this).attr("href")
