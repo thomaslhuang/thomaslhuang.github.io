@@ -45,3 +45,6 @@ textarea {
 	outline: none;
 	resize: none;
 }
+textarea.autoExpand{  
+  overflow: auto;
+}
