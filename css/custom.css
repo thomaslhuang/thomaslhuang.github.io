@@ -14,8 +14,12 @@
 }
 @font-face {
 	font-family: "Colonia";
-	src: url("fonts/colonia_082318.otf") format("otf"),
-					url("fonts/colonia_082318.ttf") format("ttf");
+	src: url("fonts/Colonia-Regular_web.eot");
+	src: url("fonts/Colonia-Regular_web.woff2") format("woff2"),
+			 url("fonts/Colonia-Regular_web.woff") format("woff"),
+			 url("fonts/Colonia-Regular_web.otf") format("otf"),
+			 url("fonts/Colonia-Regular_web.ttf") format("ttf"),
+			 url("fonts/Colonia-Regular_web.svg") format("svg");
 	font-weight: normal;
 }
 
