@@ -39,6 +39,7 @@ textarea {
 	line-height: 1em;
 	text-align: center;
 	width: 100%;
+	overflow-x: hidden;
 
 	background: none;
 	border: none;
