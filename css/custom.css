@@ -16,6 +16,7 @@
 	font-family: "Colonia";
 	src: url("fonts/Colonia-Regular_web.woff2") format("woff2"),
 			 url("fonts/Colonia-Regular_web.woff") format("woff"),
+			 url("fonts/Colonia-Regular_web.ttf") format("truetype");
 	font-weight: normal;
 }
 
@@ -41,7 +42,6 @@ textarea {
 	text-align: center;
 	width: 100%;
 	overflow-x: hidden;
-	text-rendering: optimizeLegibility;
 
 	background: none;
 	border: none;
