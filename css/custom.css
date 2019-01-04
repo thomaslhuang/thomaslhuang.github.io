@@ -38,8 +38,10 @@ textarea {
 	font-size: 64px;
 	line-height: 1em;
 	text-align: center;
+	width: 100%;
 
 	background: none;
 	border: none;
 	outline: none;
+	resize: none;
 }
