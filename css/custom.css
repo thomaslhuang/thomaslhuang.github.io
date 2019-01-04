@@ -12,6 +12,11 @@
 	font-weight: normal;
 	font-style: italic;
 }
+@font-face {
+	font-family: "Colonia";
+	src: url("fonts/colonia_082318.otf") format("otf");
+	font-weight: normal;
+}
 
 body {color: black;}
 h1, h2, h3 {font-family: "HappyTimes", serif;}
@@ -27,4 +32,14 @@ a:hover {
 	font-family: "neue-haas-grotesk-text", sans-serif;
 	text-decoration: none;
 	border-bottom: 1.5px solid #CCCCCC;
+}
+textarea {
+	font-family: "Colonia";
+	font-size: 64px;
+	line-height: 1em;
+	text-align: center;
+
+	background: none;
+	border: none;
+	outline: none;
 }
