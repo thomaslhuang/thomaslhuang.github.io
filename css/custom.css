@@ -29,6 +29,11 @@ a {
 	text-decoration: none;
 	border-bottom: 1.5px solid #CCCCCC;
 }
+a.work{
+	font-family: "HappyTimes", serif;
+	text-align: center;
+	border-bottom: none;
+}
 a:hover {
 	color: black;
 	font-family: "neue-haas-grotesk-text", sans-serif;
