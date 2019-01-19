@@ -23,22 +23,16 @@
 body {color: black;}
 h1, h2, h3 {font-family: "HappyTimes", serif;}
 p {font-family: "neue-haas-grotesk-text", sans-serif;}
-a {
+a, a:hover {
 	color: black;
 	font-family: "neue-haas-grotesk-text", sans-serif;
 	text-decoration: none;
 	border-bottom: 1.5px solid #CCCCCC;
 }
-a.work{
+a.work, a.work:hover {
 	font-family: "HappyTimes", serif;
 	text-align: center;
 	border-bottom: none;
-}
-a:hover {
-	color: black;
-	font-family: "neue-haas-grotesk-text", sans-serif;
-	text-decoration: none;
-	border-bottom: 1.5px solid #CCCCCC;
 }
 textarea {
 	font-family: "Colonia";
