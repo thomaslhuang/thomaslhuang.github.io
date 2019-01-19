@@ -21,7 +21,7 @@
 }
 
 body {color: black;}
-h1, h2, h3 {font-family: "HappyTimes", serif;}
+h1, h2, h3 {font-family: "HappyTimes", serif, !important;}
 p {font-family: "neue-haas-grotesk-text", sans-serif;}
 a, a:hover {
 	color: black;
