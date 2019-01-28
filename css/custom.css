@@ -50,7 +50,7 @@ textarea {
   display: none;
   position: absolute;
   background-color: #f2f2f2;
-  min-width: 160px;
+  width: 100%;
   z-index: 1;
 }
 .dropdown:hover .dropdown-content {display: block;}
