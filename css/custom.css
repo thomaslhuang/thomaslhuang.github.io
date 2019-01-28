@@ -43,7 +43,7 @@ textarea {
 	resize: none;
 }
 .dropdown {
-  position: relative;
+  position: absolute;
   display: inline-block;
   width: 100%;
 }
@@ -51,7 +51,6 @@ textarea {
   display: none;
   position: absolute;
   background-color: #f2f2f2;
-  width: auto;
   z-index: 1;
 }
 .dropdown:hover .dropdown-content {display: block;}
