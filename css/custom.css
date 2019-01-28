@@ -43,8 +43,9 @@ textarea {
 	resize: none;
 }
 .dropdown {
-  position: absolute;
+  position: relative;
   display: inline-block;
+  width: 100%;
 }
 .dropdown-content {
   display: none;
