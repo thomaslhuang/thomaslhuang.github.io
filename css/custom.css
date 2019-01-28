@@ -43,14 +43,14 @@ textarea {
 	resize: none;
 }
 .dropdown {
-  position: absolute;
+  position: relative;
   display: inline-block;
-  width: 100%;
 }
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f2f2f2;
+  min-width: 400px;
   z-index: 1;
 }
 .dropdown:hover .dropdown-content {display: block;}
