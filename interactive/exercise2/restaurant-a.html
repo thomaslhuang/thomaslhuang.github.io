@@ -1,0 +1,265 @@
+<!doctype html>
+
+<html>
+	<head>
+	  <title>Exercise 1: Menu</title>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="#" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/vmq6vmm.css">
+
+    <style>
+    	h1, h2, h3, h4, h5, h6, p {
+    		font-family: Nobel;
+    		font-weight: normal;
+    		color: #08a018;
+    		letter-spacing: 0.03em;
+    	}
+    	h1 {
+    		font-size: 48px;
+    		letter-spacing:0.1em;
+    		padding: 5px 0 0 0;
+    		margin: 0 0 -10px 0;
+    	}
+    	h2 {font-size: 36px;}
+    	h3 {font-size: 24px; line-height:.7em; margin-bottom: -8px;}
+    	a, a:hover {
+				color: black;
+				font-family: "neue-haas-grotesk-text", sans-serif;
+				text-decoration: none;
+				border-bottom: 1.5px solid #CCCCCC;
+			}
+			.content {
+			  max-width: 550px;
+			  margin: auto;
+			}
+			.divider {
+			  width: 2px;
+			  margin: 18px 0;
+			  background: #08a018;
+			}
+			.center {text-align: center;}
+			.right {text-align: right;}
+			.row {
+		    display: flex;
+		    width:100%;
+			}
+			.bigcol {
+				flex: 4;
+				padding:0 0 0 18px;
+			}
+			.col {flex: 1;}
+			.box {
+				border-style: solid;
+				border-radius: 5px;
+				border-width:2px;
+				color: #08a018;
+				padding: 0 30px 0 30px;
+			}
+			hr.style {
+				border-top: 2px solid #08a018;
+			}
+			.margins-none {
+				margin: 0 0 0 0;
+			}
+			.less-mb {
+				margin-bottom: -18px;
+			}
+			.bit-less-mb {
+				margin-bottom: -6px;
+			}
+			.more-mb {
+				margin-bottom: 6px;
+			}
+			.much-more-mb {
+				margin-bottom: 30px;
+			}
+			.more-pl {
+				padding-left: 30px;
+			}
+			.more-pr {
+				padding-right: 20px;
+			}
+			.more-pt {
+				padding-top: 6px;
+			}
+			.emoji {
+				font-size: 12px;
+			}
+  	</style>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="row">
+				<div class="col">
+					<h1>junzi</h1>
+					<p>www.junzi.kitchen<br>ig/fb/tw: junzikitchen</p>
+				</div>
+				<div class="col">
+					<div class="row">
+						<div class="bigcol">
+							<h4>bings & noodles<br>11am-10pm daily</h4>
+							<p>21 broadway, new haven, ct<br>475-441-7836</p>
+						</div>
+						<div class="col">
+							<h4 class="right">君<br>子<br>食<br>堂</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row more-mb">
+				<div class="col center">
+					<h2 class="less-mb">bing</h2>
+					<h3>$5.88</h3>
+				</div>
+				<div class="divider"></div>
+				<div class="col center">
+					<h2 class="less-mb">noodles</h2>
+					<h3>$9.88</h3>
+					<p>substitute with<br>kale or rice noodles (gf)</p>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="center">
+					<h3 class="more-mb">step 1</h3>
+					<h2 class="margins-none">base + sauce</h2>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<h3>chun bing</h3>
+						<p>white bing<br>whole wheat bing</p>
+						<h3>chun bing sauce</h3>
+						<p>sweet bei<br>roasted sesame<br>garlic chili<span class="emoji">🌶🌶</span></p>
+					</div>
+					<div class="divider"></div>
+					<div class="col">
+						<div style="padding-left:30px;">
+							<h3>noodles</h3>
+							<p>knife noodles<br>spring noodles</p>
+							<h3>noodle sauce</h3>
+							<p>jaja<br>tomato egg<br>furu sesame</p>
+						</div>
+					</div>
+				</div>
+				
+				<hr class="style">
+
+				<div class="center">
+					<h3 class="more-mb">step 2</h3>
+					<h2 class="margins-none">main</h2>
+					<p class="margins-none">(choose one)</p>
+				</div>
+
+				<div class="row less-mb">
+					<div class="col center"><h2 class="less-mb">🐔</h2><p>chicken</p></div>
+					<div class="col center"><h2 class="less-mb">🐮</h2><p>beef</p></div>
+					<div class="col center"><h2 class="less-mb">🐷</h2><p>pork</p></div>
+					<div class="col center"><h2 class="less-mb">🍞</h2><p>tofu</p></div>
+					<div class="col center"><h2 class="less-mb">🍄</h2><p>mushroom</p></div>
+				</div>
+				<div class="row"><div class="col right"><p>extra main +2</p></div></div>
+
+				<hr class="style">
+
+				<div class="center">
+					<h3 class="more-mb">step 3</h3>
+					<h2 class="margins-none">vegetables</h2>
+					<p class="margins-none">(choose any)</p>
+				</div>
+				<div class="row less-mb">
+					<div class="col"><p>bean sprouts<br>sweet potato <span class="emoji">🍁</span><br>green cabbage <span class="emoji">🍁</span><br>kale</p></div>
+					<div class="col more-pl"><p>cucumber<br>pickled daikon<br>long beans <span class="emoji">🍁</span></p></div>
+				</div>
+				<div class="row"><div class="col right"><h5><span class="emoji">🍁</span> fall specials</p></div></div>
+
+				<hr class="style">
+
+				<div class="center">
+					<h3 class="more-mb">step 4</h3>
+					<h2 class="margins-none">garnish</h2>
+					<p class="margins-none">(choose any)</p>
+				</div>
+				<div class="row more-mb">
+					<div class="col"><p>scallions<br>cilantro<br>bean threads<br>sweet shallots</p></div>
+					<div class="col more-pl"><p>chive ash<br>shrimp salt<br>chili oil<span class="emoji">🌶🌶🌶</span></p></div>
+				</div>
+			</div>
+
+			<div class="more-pl more-pr">
+				<p>gluten-free and vegan options available on request</p>
+				<p><u>food allergy warning</u><br>our food may contain peanutes, dairy, eggs, fish, shellfish, tree nuts, wheat or soybeans. before placing your order, please inform your server if a person in your party has a food allergy.</p>
+			</div>
+
+			<div class="box much-more-mb">
+				<h2 class="center bit-less-mb">chef’s recommendations</h2>
+				<div class="row">
+					<div class="col">
+						<div class="row">
+							<div class="col more-pr">
+								<h2>bing&ensp;<span style="font-size: 24px;">$5.88</span></h2>
+								<h3>chicken & kale</h3>
+								<p>roasted sesame, chicken, bean sprouts, kale, sweet shallots</p>
+								<h3><span class="emoji">❤️</span> beef & cucumber</h3>
+								<p>sweet bei, beef, bean sprouts, cucumber, scallions</p>
+								<h3>pork & cabbage <span class="emoji">🍁</span></h3>
+								<p>garlic chili, pork, green cabbage, pickled daikon, cilantro</p>
+								<h3><span class="emoji">❤️</span> mushroom &<br>sweet potato <span class="emoji">🍁</span></h3>
+								<p>sweet bei, mushroom, sweet potato, kale, chive ash</p>
+								<h3>tofu & long beans <span class="emoji">🍁</span></h3>
+								<p>garlic chili, tofu, sweet potato, long beans, bean threads</p>
+							</div>
+						</div>
+					</div>
+					<div class="divider"></div>
+					<div class="col">
+						<div class="more-pl">
+							<h2>noodles&ensp;<span style="font-size: 24px;">$9.88</span></h2>
+							<h3>furu chicken</h3><p>furu sesame, chicken, bean sprouts, kale, sweet shallots</p>
+							<h3>jaja beef</h3><p>jaja, beef, bean sprouts, cucumber, scallions</p>
+							<h3><span class="emoji">❤️</span> tomato pork <span class="emoji">🍁</span></h3><p>tomato egg, pork, green cabbage, pickled daikon, cilantro</p>
+							<h3>jaja mushroom <span class="emoji">🍁</span></h3><p>jaja, mushroom, sweet potato, kale, chive ash</p>
+							<h3><span class="emoji">❤️</span> furu tofu <span class="emoji">🍁</span></h3><p>furu sesame, tofu, sweet potato, long beans, bean threads</p>
+						</div>
+					</div>
+				</div>
+
+				<p><span class="emoji">❤️</span> first time favorites&emsp;<span class="emoji">🍁</span> fall specials</p>
+			</div>
+
+			<div class="box">
+				<h2 class="center bit-less-mb">sides</h2>
+				<h3>spicy beef shank <span style="font-size: 16px; float: right;">$3.0</span></h3>
+				<h3 class="much-more-mb">smashed cucumbers <span style="font-size: 16px; float: right;">$2.5</span></h3>
+
+				<hr class="style">
+
+				<h2 class="center bit-less-mb">drinks</h2>
+				<h3>gunpowder rose tea<span style="font-size: 16px; float: right;">$3.5</span></h3>
+				<h3>jasmine/oolong tea<span style="font-size: 16px; float: right;">$2.0</span></h3>
+				<h3>foxon park soda<span style="font-size: 16px; float: right;">$2.0</span></h3><p class="bit-less-mb">white birch/ginger ale/lemon-lime/orange</p>
+				<h3>vitasoy juicebox<span style="font-size: 16px; float: right;">$2.0</span></h3><p class="bit-less-mb">soy milk/lychee/mango/chrysanthemum/lemon tea</p>
+				<h3 class="much-more-mb">junzi spring water<span style="font-size: 16px; float: right;">$2.0</span></h3>
+			</div>
+
+			<div class="row more-pt">
+				<div class="col"><p class="more-pl">menu is subject to change.<br>junzi kitchen fall 2018</p></div>
+				<div class="col more-pl">
+					<h2 class="margins-none less-mb">we cater</h2>
+					<p class="bit-less-mb">www.junzi.kitchen/catering</p>
+					<h2 class="margins-none less-mb">we deliver</h2>
+					<p>www.junzi.kitchen/order</p>
+				</div>
+			</div>
+			
+			<hr class="style">
+
+			<p class="center more-pt much-more-mb"><a href="/interactive">Return to Interactive.</a></p>
+		</div>
+	</body>
+</html>
