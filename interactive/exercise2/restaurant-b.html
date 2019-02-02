@@ -2,31 +2,113 @@
 
 <html>
 	<head>
-	  <title>Exercise 1: Menu</title>
+	  <title>Exercise 2: Menu B</title>
 
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <meta charset="utf-8" />
     <link rel="icon" href="#" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/vmq6vmm.css">
+
+    <style>
+    	h1, h2, h3, h4, h5, h6, p {
+    		font-family: Nobel;
+    		font-weight: normal;
+    		color: #08a018;
+    		letter-spacing: 0.03em;
+    	}
+    	h1 {
+    		font-size: 48px;
+    		letter-spacing:0.1em;
+    		padding: 5px 0 0 0;
+    		margin: 0 0 -10px 0;
+    	}
+    	h2 {font-size: 36px;}
+    	h3 {font-size: 24px; line-height:.7em; margin-bottom: -8px;}
+    	a, a:hover {
+				color: black;
+				font-family: "neue-haas-grotesk-text", sans-serif;
+				text-decoration: none;
+				border-bottom: 1.5px solid #CCCCCC;
+			}
+			.container {
+				width: 550px;
+			}
+			.divider {
+			  width: 2px;
+			  margin: 18px 0;
+			  background: #08a018;
+			}
+			.center {text-align: center;}
+			.right {text-align: right;}
+			.row {
+		    display: flex;
+		    width:100%;
+			}
+			.bigcol {
+				flex: 4;
+				padding:0 0 0 18px;
+			}
+			.col {flex: 1;}
+			.box {
+				border-style: solid;
+				border-radius: 5px;
+				border-width:2px;
+				color: #08a018;
+				padding: 0 30px 0 30px;
+			}
+			hr.style {border-top: 2px solid #08a018;}
+			.margins-none {margin: 0 0 0 0;}
+			.less-mb {margin-bottom: -18px;}
+			.bit-less-mb {margin-bottom: -6px;}
+			.more-mb {margin-bottom: 6px;}
+			.much-more-mb {margin-bottom: 30px;}
+			.more-pl {padding-left: 30px;}
+			.more-pr {padding-right: 20px;}
+			.more-pt {padding-top: 6px;}
+			.emoji {font-size: 12px;}
+  	</style>
 	</head>
 
 	<body>
-		<h1>junzi</h1>
-		<p>www.junzi.kitchen<br>ig/fb/tw: junzikitchen</p>
-		<h4>bings & noodles<br>11am-10pm daily</h4>
-		<p>21 broadway, new haven, ct<br>475-441-7836</p>
+		<marquee>
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h1>junzi</h1>
+						<p>www.junzi.kitchen<br>ig/fb/tw: junzikitchen</p>
+					</div>
+					<div class="col">
+						<div class="row">
+							<div class="bigcol">
+								<h4>bings & noodles<br>11am-10pm daily</h4>
+								<p>21 broadway, new haven, ct<br>475-441-7836</p>
+							</div>
+							<div class="col">
+								<h4 class="right">君<br>子<br>食<br>堂</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</marquee>
 
-		<hr>
-
-		<h2>bing</h2>
-		<h3>$5.88</h3>
-
-		<hr>
-
-		<h2>noodles</h2>
-		<h3>$9.88</h3>
-		<p>substitute with kale or rice noodles(gf)</p>
-
-		<hr>
+		<marquee direction="right">
+			<div class="container">
+				<div class="row more-mb">
+					<div class="col center">
+						<h2 class="less-mb">bing</h2>
+						<h3>$5.88</h3>
+					</div>
+					<div class="divider"></div>
+					<div class="col center">
+						<h2 class="less-mb">noodles</h2>
+						<h3>$9.88</h3>
+						<p>substitute with<br>kale or rice noodles (gf)</p>
+					</div>
+				</div>
+			</div>
+		</marquee>
 
 		<h4>step 1</h4>
 		<h3>base+sauce</h3>
@@ -110,6 +192,6 @@
 		<p>www.junzi.kitchen/order</p>
 
 		<hr>
-		<p><a href="/interactive">Return to Interactive.</a><p>
+		<p><a href="/interactive">Return to Interactive.</a></p>
 	</body>
 </html>
