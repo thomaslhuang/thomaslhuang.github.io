@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html>
+	<head>
+	  <title>Restaurant D</title>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="#" />
+
+	  <link rel="stylesheet" href="https://use.typekit.net/whu4ujk.css">
+
+    <style>
+    	html, body {
+		    max-width: 100%;
+		    overflow-x: hidden;
+		    margin: 0;
+				padding: 0;
+				word-wrap:break-word;
+			}
+			h1, h2, h3, h4, p {
+    		font-family: "neue-haas-grotesk-text";
+    		font-weight: normal;
+    		margin: 30px;
+    		color: black;
+			}
+			h5, h6 {
+				font-family: "Big Caslon", serif;
+				font-weight: normal;
+				text-transform: uppercase;
+				padding: 0 30px;
+			}
+			h5 {font-size: 5em; margin: 0;}
+			h6 {font-size: 3em; margin: 0;}
+			p {font-size:24px; font-style: italic;}
+			a {text-decoration: none; color:black;}
+			img {width:50%;height:100vh;position:fixed;}
+			p span {font-family: "Big Caslon", serif; font-style:normal;}
+			h1.special {
+				color: white;
+				font-size: 6em;
+				position: fixed;
+				margin: auto;
+				vertical-align: middle;
+			}
+			span.emoji {font-size: 18px;  font-style:normal;}
+			.container {
+				display: grid;
+				grid-template-columns: 50% 50%;
+			}
+			.left {
+				grid-column-start: 1;
+			}
+			.R {
+				grid-column-start: 2;
+				grid-column-end: 3;
+			}
+			.spin {
+				-webkit-animation: rotation 8s infinite linear;
+			}
+			@-webkit-keyframes rotation {
+					from {-webkit-transform: rotate(0deg);}
+					to {-webkit-transform: rotate(359deg);}
+			}
+  	</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="left">
+				<img src="img/food.jpg" class="spin">
+			</div>
+			<div class="R">
+				<h5>junzi</h5>
+				<p><a href="https://www.junzi.kitchen" target="_blank" id="junzi">www.junzi.kitchen</a><br><a href="https://www.instagram.com/junzikitchen/" target="_blank" id="ig">ig</a>/<a href="https://www.facebook.com/junzikitchen/" target="_blank" id="fb">fb</a>/<a href="https://twitter.com/JunziKitchen" target="_blank" id="tw">tw</a>: junzikitchen<br>bings & noodles<br>11am-10pm daily<br>21 broadway, new haven, ct<br>475-441-7836</p>
+				<hr>
+				<h6>chef's recommendations</h6>
+				<p>bing <span>$5.88</span><br>chicken & kale<br>roasted sesame, chicken, bean sprouts, kale, sweet shallots<br><span class="emoji">❤️</span> beef & cucumber<br>sweet bei, beef, bean sprouts, cucumber, scallions<br>pork & cabbage <span class="emoji">🍁</span><br>garlic chili, pork, green cabbage, pickled daikon, cilantro<br><span class="emoji">❤️</span> mushroom & sweet potato <span class="emoji">🍁</span><br>sweet bei, mushroom, sweet potato, kale, chive ash<br>tofu & long beans <span class="emoji">🍁</span><br>garlic chili, tofu, sweet potato, long beans, bean threads</p>
+				<p>noodles <span>$9.88</span><br>furu chicken<br>furu sesame, chicken, bean sprouts, kale, sweet shallots<br>jaja beef<br>jaja, beef, bean sprouts, cucumber, scallions<br><span class="emoji">❤️</span> tomato pork <span class="emoji">🍁</span><br>tomato egg, pork, green cabbage, pickled daikon, cilantro<br>jaja mushroom <span class="emoji">🍁</span><br>jaja, mushroom, sweet potato, kale, chive ash<br><span class="emoji">❤️</span> furu tofu <span class="emoji">🍁</span><br>furu sesame, tofu, sweet potato, long beans, bean threads</p>
+				<p><span class="emoji">❤️</span> first time favorites&emsp;<span class="emoji">🍁</span> fall specials</p>
+				<hr>
+				<h6>sides</h6>
+				<p>spicy beef shank <span>$3</span><br>smashed cucumbers <span>$2.5</span></p>
+				<hr>
+				<h6>drinks</h6>
+				<p>gunpowder rose tea <span>$3.5</span><br>jasmine/oolong tea <span>$2</span><br>foxon park soda <span>$2</span><br>white birch/ginger ale/lemon-lime/orange<br>vitasoy juicebox <span>$2</span><br>soy milk/lychee/mango/chrysanthemum/lemon tea<br>junzi spring water <span>$2</span></p>
+				<hr>
+				<p>menu is subject to change. junzi kitchen fall 2018<br>we cater<br>www.junzi.kitchen/catering<br>we deliver<br>www.junzi.kitchen/order</p>
+				<hr>
+				<p><a href="/interactive">Return to Interactive.</a></p>
+			</div>
+		</div>
+	</body>
+</html>

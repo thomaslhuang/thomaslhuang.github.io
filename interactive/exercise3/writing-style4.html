@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html>
+	<head>
+	  <title>Writing D</title>
+
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="icon" href="#" />
+
+    <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
+
+    <style>
+    	html, body {background-color:black;} 
+    	h1, h2, h3, h4, h5, h6, p {
+    		font-family: "Cormorant", serif;
+    		font-weight: 400;
+    		color: black;
+    	}
+    	p {font-size: 96px; display:inline;}
+    	a, a:hover {
+				color: snow;
+				text-decoration: none;
+			}
+			a[data-footnote]:after {
+			  content: attr(data-footnote);
+			  vertical-align: super;
+			  font-size: 50%;
+			}
+			a[data-footnote] {
+			  text-decoration: none;
+			  position: relative;
+			  color:black;
+			}
+			a[data-footnote]:hover {
+				color:snow;
+			}
+			a[data-footnote]:hover:before {
+			  content: attr(data-title);
+			  display: inline;
+			  padding: 0.5em;
+			  color: #FFF;
+			  position: absolute;
+			  top: 8%;
+			  left: 190%;
+			  border-radius: 1px;
+			  width: 25em;
+			  font-size: 18px;
+			}
+			p.reveal:hover {color: snow;}
+    </style>
+	</head>
+
+<body>
+		<p class="reveal"><i>?Where</i> is a project about form and figure,</p>
+		<p class="reveal"> about memory and witness.</p>
+		<p class="reveal"> Designed and built for <i>Halves: Senior Thesis Works in Progress</i>,</p>
+		<p class="reveal"> and installed in the Yale School of Art Green Gallery.</p>
+		<p class="reveal"> <i>?Where</i> utilizes two Raspberry Pi Zero Ws,</p>
+		<p class="reveal"> one attached to a camera on a balcony overlooking the gallery space,</p>
+		<p class="reveal"> and another connected to a thermal receipt printer located more centrally in the gallery.</p>
+		<p class="reveal"> Every thirty seconds,</p>
+		<p class="reveal"> the camera takes a photo of the gallery</p>
+		<p class="reveal"> and compares it to an initial image of the space.</p>
+		<p class="reveal"> Then a mask is created,<a href="#footnote-1" data-title="The mask is created by subtracting the new image from the initial image, and then thresholding the result." data-footnote="[1]"></a></p>
+		<p class="reveal"> isolating any new objects that have entered the space,</p>
+		<p class="reveal"> highlighting the discrepancies between the two photos.</p>
+		<p class="reveal"> The mask is then uploaded to Dropbox,</p>
+		<p class="reveal"> where the Pi attached to the printer periodically checks to see if a new image has been uploaded.</p>
+		<p class="reveal"> When it finds a new mask, the image is downloaded and printed,</p>
+		<p class="reveal"> creating a relatively accurate snapshot of the gallery at that moment.<a href="#footnote-2" data-title="Both the camera and printer scripts were written in Python. The Dropbox-Uploader bash script used in these scripts to upload and retrieve masks was written by Andrea Fabrizi." data-footnote="[2]"></a><a href="#footnote-3" data-title="Materials: Raspberry Pi Zero W, thermal printer, thermal printer paper." data-footnote="[3]"></a></p>
+		<h1><a href="/interactive">Return to Interactive.</a></h1>
+	</body>
+</html>
