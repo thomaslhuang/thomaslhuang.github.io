@@ -10,6 +10,7 @@
 
     <style>
     	html, body {margin:0;padding:0;}
+    	img {display:block;margin-left:auto;margin-right:auto; padding:30px 0;}
     	p {
     		font-family: "Arial Narrow", sans-serif;
     		font-weight: normal;
@@ -26,16 +27,13 @@
     		padding: 0;
     		border-top: 2px solid black;
     	}
-    	hr:hover {
-    		border-top: 2px solid red;
-    	}
-    	div.col-l p {
-    		color: black;
-    	}
+    	hr:hover {border-top: 2px solid red;}
+    	div.col-l p {color: black;}
     	.row {
     		display: flex;
     		width: 100%;
     	}
+    	.col {flex: 1;}
     	.col-l {
     		flex: 2;
     		background: repeating-linear-gradient(red, red 30px, black 30px, black 33px);
@@ -48,9 +46,7 @@
     		flex: 3;
     		background: repeating-linear-gradient(white, white 30px, black 30px, black 33px);
     	}
-    	.you {
-    		font-family: "Arial", sans-serif;
-    	}
+    	.you {font-family: "Arial", sans-serif;}
     </style>
 	</head>
 
@@ -102,7 +98,12 @@
 				<span class="you">You</span>’re at <span class="you">your</span> lovers’ house. They had gotten a new puppy a couple months ago. By the time you’ve met the puppy, he’s already fully grown. <span class="you">You</span>’re in their bed. <span class="you">You</span> call one of them. He answers. <span class="you">You</span> say nothing, and shove the phone under the covers. Silence. 30 seconds pass. <span class="you">You</span> don’t know what to say. He says, frustrated, “you haven’t even said anything!” <span class="you">You</span> realize he is sitting at the table just outside the bedroom. <span class="you">You</span> say nothing. <span class="you">You</span> can’t say anything.</p>
 				<p><a href="/interactive">Go back.</a></p>
 			</div>
-			<div class="col-r"></div>
+			<div class="col-r">
+				<div class="row">
+					<div class="col"><img src="img/fbi.jpg" width="80%"><img src="img/fbi.jpg" width="80%"><img src="img/fbi.jpg" width="80%"></div>
+					<div class="col"><img src="img/fbi.jpg" width="80%"><img src="img/fbi.jpg" width="80%"><img src="img/fbi.jpg" width="80%"></div>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
