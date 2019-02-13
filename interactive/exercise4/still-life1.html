@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>CSS Still Life 1</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="canvas.css">
+
+	<style>
+	.canvas {
+		/* if you want to change the background of your canvas, do it here */
+		background: burlywood;
+	}
+	#egg {
+		width: 50px;
+		height: 35px;
+		background: ivory;
+		border-radius: 50%;
+		position: absolute;
+		left: 270px;
+		top: 260px;
+		z-index:5;
+	}
+	#paper {
+		width: 530px;
+		height: 110px;
+		background: orange;
+		transform: skew(-60deg) rotate(2deg);
+		position: absolute;
+		left: 180px;
+		top: 250px;
+	}
+	#book {
+		width: 170px;
+		height: 40px;
+		background: firebrick;
+		transform: skew(-60deg) rotate(4deg);
+		box-shadow: 21px 10px darkred;
+		position: absolute;
+		left: 500px;
+		top: 270px;
+		z-index: 2;
+	}
+	#onion {
+		width: 70px;
+		height: 70px;
+		background: peru;
+		border-radius: 50%;
+		position: absolute;
+		left: 550px;
+		top: 220px;
+		z-index: 5;
+	}
+	#candle {
+		height: 80px;
+		width: 60px;
+		border: 2px transparent white;
+		position: absolute;
+		top: 235px;
+		left: 265px;
+		z-index: 6;	
+	}
+	#candle #glass{
+		height: 100%;
+		width: 100%;
+		background: white;
+		opacity: .2;
+		position: absolute;
+	}
+	#candle #wax{
+		height: 70%;
+		width: 90%;
+		background: brown;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+	}
+	#candle #wick{
+		height: 10px;
+		width: 2px;
+		background: black;
+		position: absolute;
+		top: 15%;
+		left: calc(50% - 1px);
+	}
+	@-webkit-keyframes flicker {
+	  from {
+	    transform: rotate(42deg);
+	    opacity: 1;
+	    background: gold;
+	  }
+	  to {
+	    transform: rotate(48deg);
+	    opacity: .5;
+	    background: coral;
+	  }
+	}
+	#candle #flame{
+		height: 10px;
+		width: 10px;
+		border-radius: 0 50% 50% 50%;
+		position: absolute;
+		top: 5px;
+		left: calc(58% - 10px);
+
+	  -webkit-animation-duration: 0.8s;
+	  -webkit-animation-name: flicker;
+	  -webkit-animation-iteration-count: infinite;
+	  -webkit-animation-direction: alternate;
+	  -webkit-animation-timing-function: ease-in-out;
+	}
+	.clementine  {
+		width: 55px;
+		height: 55px;
+		background: orangered;
+		border-radius:  50%;
+		position: absolute;
+		z-index: 4;
+	}
+	.clementine.one {
+		left: 302px;
+		top: 231px;
+	}
+	.clementine.two {
+		left: 530px;
+		top: 231px;
+	}
+	.clementine.three {
+		left: 392px;
+		top: 271px;
+	}
+	.rect {
+		height: 12px;
+		width: 20px;
+		background: darkred;
+		position: absolute;
+	}
+	.rect.one {
+		left: 474px;
+		top: 304px;
+	}
+	.rect.two {
+		left: 675px;
+		top: 276px;
+	}
+	</style>
+
+</head>
+
+<body>
+
+		<!-- this starts the canvas div. do not delete this! -->
+    <div class="canvas">
+
+			<!-- below is where you put your objects in your still life -->
+			<div id="egg"></div>
+			<div id="paper"></div>
+			<div id="book"></div>
+			<div id="onion"></div>
+    	<div class="clementine one"></div>
+    	<div class="clementine two"></div>
+    	<div class="clementine three"></div>
+    	<div id="candle">
+    		<div id="wax"></div>
+    		<div id="wick"></div>
+    		<div id="flame"></div>
+    		<div id="glass"></div>
+    	</div>
+    	<div class="rect one"></div>
+    	<div class="rect two"></div>
+
+		<!-- this ends the canvas div. do not delete this! -->
+    </div>
+
+</body>
+
+</html>

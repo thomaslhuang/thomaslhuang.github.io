@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>CSS Still Life 2</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="canvas.css">
+
+	<style>
+	.canvas {
+		/* if you want to change the background of your canvas, do it here */
+		background: burlywood;
+	}
+	#egg {
+		width: 50px;
+		height: 35px;
+		background: ivory;
+		border-radius: 50%;
+		position: absolute;
+		left: 550px;
+		top: 295px;
+		z-index:5;
+	}
+	#paper {
+		width: 560px;
+		height: 62px;
+		background: lightsteelblue;
+		transform: skew(-80deg) rotate(2deg);
+		position: absolute;
+		left: 170px;
+		top: 300px;
+	}
+	#lamp {
+		width: 100px;
+		height: 80px;
+		background: moccasin;
+		border-radius: 45%;
+		position: absolute;
+		transition: .3 box-shadow ease-out;
+		-webkit-transition: .3s box-shadow ease-out;
+		-moz-transition: .3s box-shadow ease-out;
+		-o-transition: .3s box-shadow ease-out;
+		left: 310px;
+		top: 235px;
+	}
+	#lamp:hover {
+		box-shadow: 0 0 35px 25px rgba(255, 255, 255, 0.4);
+	}
+	#glass {
+		height: 130px;
+		width: 70px;
+		background: white;
+		opacity: 0.3;
+		position: absolute;
+		top: 195px;
+		left: 535px;
+	}
+	#glass #water{
+		height: 30%;
+		width: 90%;
+		background: cornflowerblue;
+		position: absolute;
+		top: 67%;
+		left: 5%;
+	}
+	#glass #meniscus{
+		height: 5%;
+		width: 90%;
+		border-radius: 50%;
+		background: lightsteelblue;
+		position: absolute;
+		top: 64%;
+		left: 5%;
+	}
+	#cats {
+		width: 70px;
+		height: 95px;
+		position: absolute;
+		top: 238px;
+		left: 320px;
+	}
+	#cats #dome {
+		width: 100%;
+		height: 80%;
+		position: absolute;
+		background: white;
+		opacity: 0.3;
+		border-top-right-radius: 50%;
+		border-top-left-radius: 50%;
+	}
+	#cats #stand {
+		width:100%;
+		height: 20%;
+		position: absolute;
+		bottom: 0;
+		background: red;
+	}
+	#cats #stand-top {
+		width: 100%;
+		height: ;
+	}
+	#cats #stand-bottom {
+
+	}
+	.clementine  {
+		width: 55px;
+		height: 55px;
+		background: orangered;
+		border-radius:  50%;
+		position: absolute;
+		z-index: 4;
+		top: 280px;
+		left: 450px;
+	}
+	</style>
+
+</head>
+
+<body>
+
+		<!-- this starts the canvas div. do not delete this! -->
+    <div class="canvas">
+
+			<!-- below is where you put your objects in your still life -->
+    	<div id="paper"></div>
+    	<div id="lamp"></div>
+    	<div id="egg"></div>
+    	<div id="glass"><div id="water"></div><div id="meniscus"></div></div>
+    	<div class="clementine"></div>
+    	<div id="cats">
+    		<div id="dome"></div>
+    		<div id="stand"></div>
+    	</div>
+
+		<!-- this ends the canvas div. do not delete this! -->
+    </div>
+
+</body>
+
+</html>
