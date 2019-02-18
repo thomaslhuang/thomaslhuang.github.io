@@ -44,6 +44,7 @@
 		-o-transition: .3s box-shadow ease-out;
 		left: 310px;
 		top: 235px;
+		filter: blur(1px);
 	}
 	#lamp:hover {
 		box-shadow: 0 0 35px 25px rgba(255, 255, 255, 0.4);
@@ -56,6 +57,7 @@
 		position: absolute;
 		top: 195px;
 		left: 535px;
+		filter: blur(1px);
 	}
 	#glass #water{
 		height: 30%;
@@ -99,10 +101,64 @@
 	}
 	#cats #stand-top {
 		width: 100%;
-		height: ;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 15px;
+    background: #f04d4d;
 	}
 	#cats #stand-bottom {
-
+    width: 100%;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -10px;
+    background: red;
+	}
+	#cats #cat {
+    height: 49px;
+    width: 29px;
+    position: absolute;
+    left: 21px;
+    bottom: 20px;
+	}
+	#cats #cat #head {
+    width: 100%;
+    height: 40%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    background: gold;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-name: bob;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+	}
+	#cats #cat #head .ear {
+		width: 40%;
+		height: 30%;
+		position: absolute;
+		top: 0;
+		background: gold;
+	}
+	#cats #cat #head .ear.one {
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+	}
+	#cats #cat #head .ear.two {
+		right: 0;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+	}
+	#cats #cat #body {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    bottom: 0;
+    background: gold;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
 	}
 	.clementine  {
 		width: 55px;
@@ -113,6 +169,10 @@
 		z-index: 4;
 		top: 280px;
 		left: 450px;
+	}
+	@-webkit-keyframes bob {
+		from {transform: rotate(5deg);}
+		to {transform: rotate(-5deg);}
 	}
 	</style>
 
@@ -132,6 +192,15 @@
     	<div id="cats">
     		<div id="dome"></div>
     		<div id="stand"></div>
+    		<div id="stand-top"></div>
+    		<div id="stand-bottom"></div>
+    		<div id="cat">
+    			<div id="head">
+    				<div class="ear one"></div>
+    				<div class="ear two"></div>
+    			</div>
+    			<div id="body"></div>
+    		</div>
     	</div>
 
 		<!-- this ends the canvas div. do not delete this! -->

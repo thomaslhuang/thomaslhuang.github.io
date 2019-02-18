@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>CSS Organism</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<style>
+		html, body {background: lightseagreen; margin: 0;}
+	  .flex-container {
+	  	height: 100vh;
+	  	display: flex;
+		  justify-content: center;
+		  align-items: center;
+	    z-index: 2;
+	  }
+	  .seaweed {
+	  	position: absolute;
+	  	width: 50px;
+      background-color: darkgreen;
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	  }
+	  .seaweed.one {
+      height: 500px;
+      top: 10px;
+	  	left: 200px;
+	  }
+	  .seaweed.two {
+	  	height: 300px;
+      top: 212px;
+	  	left: 174px;
+	  	transform: rotate(-10deg);
+	  }
+	  .seaweed.three {
+	  	height: 200px;
+      top: 313px;
+	  	left: 226px;
+	  	transform: rotate(15deg);
+	  }
+	  .rock {
+	  	width: 150px;
+	    height: 70px;
+	    background-color: gray;
+	    border-radius: 50% 50% 30% 30% / 75% 75% 30% 30%;
+	    position: absolute;
+	    top: 470px;
+	    left: 156px;
+	  }
+	  #sand {
+	  	height: 50vh;
+	  	background-color: tan;
+	  	margin-top:-50vh;
+	  }
+		#blobfish {
+	    display: block;
+	    width: 500px;
+	    height: 300px;
+	    background-color: mistyrose;
+	    border:3px solid lightpink;
+	    border-radius: 50% 50% 30% 30% / 75% 75% 30% 30%;
+	    position: relative;
+	    -webkit-animation-duration: 2s;
+	    -webkit-animation-name: breathe;
+	    -webkit-animation-iteration-count: infinite;
+	    -webkit-animation-direction: alternate;
+	    -webkit-animation-timing-function: ease-in-out;
+	  }
+	  #blobfish .eye {
+	  	width: 15px;
+	  	height: 30px;
+	  	background: black;
+	  	border-radius: 50%;
+	  	position: absolute;
+	  	top: 30%;
+	    -webkit-animation-duration: 1.5s;
+	    -webkit-animation-name: blink;
+	    -webkit-animation-iteration-count: infinite;
+	    -webkit-animation-direction: alternate;
+	    -webkit-animation-timing-function: ease-in-out;
+	  }
+	  #blobfish #eyeL {
+	  	left: 20%;
+	  	transform: rotate(15deg);
+	  }
+	  #blobfish #eyeR {
+	  	right: 20%;
+	  	transform: rotate(-15deg);
+	  }
+	  #blobfish .fin {
+	  	height: 30px;
+  		width: 30px;
+  		background: mistyrose;
+		  border-top: 2px solid lightpink;
+		  border-bottom: 2px solid lightpink;
+	    border-radius: 50% 50% 30% 30% / 60% 60% 30% 30%;
+		  position: absolute;
+		  top: 65%;
+	    -webkit-animation-duration: 1.5s;
+	    -webkit-animation-name: flap;
+	    -webkit-animation-iteration-count: infinite;
+	    -webkit-animation-direction: alternate;
+	    -webkit-animation-timing-function: ease-in-out;
+	  }
+	  #blobfish #finL {
+		  border-left: 3px solid lightpink;
+	  	left: -5%;
+	  }
+	  #blobfish #finR {
+		  border-right: 3px solid lightpink;
+	  	left: 98%;
+	  }
+	  #blobfish #nose {
+		  height: 60px;
+		  width: 32%;
+		  background: mistyrose;
+		  border-left: 5px solid lightpink;
+		  border-right: 5px solid lightpink;
+		  border-bottom: 5px solid lightpink;
+		  border-bottom-left-radius: 160px;
+		  border-bottom-right-radius: 160px;
+		  position: absolute;
+		  top: 45%;
+		  left: 33%;
+	  }
+	  #blobfish #mouth {
+		  height: 70px;
+		  width: 52%;
+		  background: mistyrose;
+		  border-top: 10px solid lightpink;
+	    border-radius: 50% 50% 30% 30% / 75% 75% 30% 30%;
+		  position: absolute;
+		  top: 60%;
+		  left: 23%;
+		  -webkit-animation-duration: 1.5s;
+	    -webkit-animation-name: frown;
+	    -webkit-animation-iteration-count: infinite;
+	    -webkit-animation-direction: alternate;
+	    -webkit-animation-timing-function: ease-in-out;
+	  }
+	  @keyframes flap {
+		  0% {transform: rotate(10deg);}
+		  100% {
+		  	transform: rotate(-10deg);
+		    transform: translate(0,10px);
+		  }
+		}
+		@keyframes breathe {
+		  0% {transform: scale(1);}
+		  100% {transform: scale(0.98);}
+		}
+		@keyframes frown {
+		  0% {transform: scale(1);}
+		  100% {transform: scale(1,1.1);}
+		}
+		@keyframes blink {
+			0% {}
+			60% {transform: scale(1,1);}
+			70% {transform: scale(1,0);}
+			80% {transform: scale(1,1);}
+		  100% {}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="seaweed one"></div>
+	<div class="seaweed two"></div>
+	<div class="seaweed three"></div>
+	<div class="rock"></div>
+	<div class="flex-container">
+		<div id="blobfish" class="center">
+			<div id="eyeL" class="eye"></div>
+			<div id="eyeR" class="eye"></div>
+			<div id="mouth"></div>
+			<div id="nose"></div>
+			<div id="finL" class="fin"></div>
+			<div id="finR" class="fin"></div>
+		</div>
+	</div>
+	<div id="sand"></div>
+</body>
+
+</html>
