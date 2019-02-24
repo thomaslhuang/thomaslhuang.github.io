@@ -11,72 +11,106 @@
 	  <link rel="stylesheet" href="https://use.typekit.net/whu4ujk.css">
 
     <style>
-    	@media print {
-
+    	@font-face {
+    		font-family: "Ajax";
+    		src: url("fonts/optiajax-webfont.woff2") format("woff2"),
+    				 url("fonts/optiajax-webfont.woff") format("woff");
     	}
 	    body {margin: 0px;}
+	    h1, h2, p {
+	    	font-family: "neue-haas-grotesk-text";
+	    	font-style: normal;
+	    	font-weight: normal;
+	    	color: lime;
+	    }
+	    h1 {
+	    	font-family: "Ajax";
+	    	font-size: 3em;
+		  	margin: 0;
+		  	position: fixed;
+		  	left: 18px;
+	    }
+	    img {
+		    max-width: 100%;
+		    display: block;
+		  }
+		  #head {
+		  	background-color: snow;
+		  }
+	    #archives {
+	    	display: grid;
+    		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	    }
 			.grid-container {
 			  display: grid;
-			  grid-template-columns: 50% 50%;
+			  grid-template-areas:
+			  "colone coltwo";
+			  grid-template-columns: 100px 1fr;
 			  grid-gap: 1px;
 			  background-color: lime;
 			  padding: 1px;
 			  margin: 0px;
 			  border-width: 0px;
 			}
-			.grid-container > div {
-			  display: flex;
-			  justify-content: center;
-			  align-items: center;
-			  background-color: snow;
-			  font-size: 30px;
-			  border-color: black;
-			  border: 1px;
-			  font-size: 2.2vmin;
-			  text-align: left;
-			  margin: 0px;
-			  height: calc(50vw-1px); /* SUBTRACTINGs PADDING TOP & BOTTOM */
-			  font-family: neue-haas-grotesk-text;
+			.grid-container > #head {
+				grid-area: colone;
 			}
-			.grid-container > div:hover {
-				color: lime;
-				background-color: lime;
+			.grid-container > #archives {
+				grid-area: coltwo;
 			}
+			.rotate {
+				transform: rotate(-90deg) translate(-80vh);
+				transform-origin: top left;
+				white-space: nowrap;
+			}
+    	@media screen (max-width: 700px) {
+    		.grid-container {
+				  grid-template-areas:
+				  "colone" 
+				  "coltwo";
+				}
+    	}
+    	@media print {
+
+    	}
   	</style>
 	</head>
 
 	<body>
 		<div class="grid-container">
-			<div><img src="img/30.png" width="100%"></div>
- 			<div><img src="img/29.png" width="100%"></div>
-			<div><img src="img/28.png" width="100%"></div>
- 			<div><img src="img/27.png" width="100%"></div>
-			<div><img src="img/26.png" width="100%"></div>
- 			<div><img src="img/25.png" width="100%"></div>
-			<div><img src="img/24.png" width="100%"></div>
- 			<div><img src="img/23.png" width="100%"></div>
-			<div><img src="img/22.png" width="100%"></div>
- 			<div><img src="img/21.png" width="100%"></div>
-			<div><img src="img/20.png" width="100%"></div>
- 			<div><img src="img/19.png" width="100%"></div>
-			<div><img src="img/18.png" width="100%"></div>
- 			<div><img src="img/17.png" width="100%"></div>
-			<div><img src="img/16.png" width="100%"></div>
- 			<div><img src="img/15.png" width="100%"></div>
-			<div><img src="img/14.png" width="100%"></div>
- 			<div><img src="img/13.png" width="100%"></div>
-			<div><img src="img/12.png" width="100%"></div>
- 			<div><img src="img/11.png" width="100%"></div>
- 			<div><img src="img/10.png" width="100%"></div>
- 			<div><img src="img/09.png" width="100%"></div>
-			<div><img src="img/08.png" width="100%"></div>
- 			<div><img src="img/07.png" width="100%"></div>
-			<div><img src="img/06.png" width="100%"></div>
- 			<div><img src="img/05.png" width="100%"></div>
-			<div><img src="img/04.png" width="100%"></div>
- 			<div><img src="img/03.png" width="100%"></div>
-			<div><img src="img/02.png" width="100%"></div>
- 			<div><img src="img/01.png" width="100%"></div>
+			<div id="head"><h1 class="rotate">naughtier.mom</h1></div>
+			<div id="archives">
+				<div><img src="img/30.png"></div>
+	 			<div><img src="img/29.png"></div>
+				<div><img src="img/28.png"></div>
+	 			<div><img src="img/27.png"></div>
+				<div><img src="img/26.png"></div>
+	 			<div><img src="img/25.png"></div>
+				<div><img src="img/24.png"></div>
+	 			<div><img src="img/23.png"></div>
+				<div><img src="img/22.png"></div>
+	 			<div><img src="img/21.png"></div>
+				<div><img src="img/20.png"></div>
+	 			<div><img src="img/19.png"></div>
+				<div><img src="img/18.png"></div>
+	 			<div><img src="img/17.png"></div>
+				<div><img src="img/16.png"></div>
+	 			<div><img src="img/15.png"></div>
+				<div><img src="img/14.png"></div>
+	 			<div><img src="img/13.png"></div>
+				<div><img src="img/12.png"></div>
+	 			<div><img src="img/11.png"></div>
+	 			<div><img src="img/10.png"></div>
+	 			<div><img src="img/09.png"></div>
+				<div><img src="img/08.png"></div>
+	 			<div><img src="img/07.png"></div>
+				<div><img src="img/06.png"></div>
+	 			<div><img src="img/05.png"></div>
+				<div><img src="img/04.png"></div>
+	 			<div><img src="img/03.png"></div>
+				<div><img src="img/02.png"></div>
+	 			<div><img src="img/01.png"></div>
+			</div>
 		</div>
 	</body>
 
