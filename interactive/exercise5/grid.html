@@ -40,7 +40,19 @@
 	    #archives {
 	    	display: grid;
     		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			  grid-gap: 1px;
+			  background-color: lime;
 	    }
+	    #archives > div {
+	    	background: snow;
+	    }
+	    #archives > div img {
+	    	opacity: 0;
+	    	transition: .25s ease;
+	    }
+			#archives > div img:hover {
+			  opacity: 100;
+			}
 			.grid-container {
 			  display: grid;
 			  grid-template-areas:
@@ -68,6 +80,7 @@
 				  grid-template-areas:
 				  "colone" 
 				  "coltwo";
+				  grid-template-rows: 100px 1fr;
 				}
     	}
     	@media print {
