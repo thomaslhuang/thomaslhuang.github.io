@@ -155,7 +155,35 @@
 				}
     	}
     	@media print {
-
+    		* {
+			   -webkit-animation: none !important;
+			   -moz-animation: none !important;
+			   -o-animation: none !important;
+			   -ms-animation: none !important;
+			   animation: none !important;
+			  }
+    		#head {
+			  	display: flex;
+			  	align-items: center;
+			  	justify-content: center;
+			  }
+    		#head h1 {
+    			font-size: 3em;
+    			position: relative;
+    			left: auto;
+			  }
+			  #archives > div#stat {
+			  	display: none;
+			  }
+			  #archives > div img {
+		    	opacity: 100;
+		    }
+    		.grid-container {
+				  grid-template-areas:
+				  "colone colone" 
+				  "coltwo coltwo";
+				  grid-template-rows: 100px 1fr;
+				}
     	}
   	</style>
 	</head>
