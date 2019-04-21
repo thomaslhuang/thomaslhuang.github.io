@@ -42,6 +42,10 @@ p {
   margin: 0.5em 0;
   line-height: 1.2em;
 }
+a {
+  text-decoration: none;
+  color: red;
+}
 .header {
   margin: 40px 0;
   text-align: center;
@@ -75,6 +79,7 @@ hr.brew {
   padding: 2em;
   border-bottom: 1px solid black;
   cursor: pointer;
+  width: auto;
 }
 
 .item-l {
