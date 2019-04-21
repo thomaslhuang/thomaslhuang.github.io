@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "Ajax";
+  src: url("fonts/optiajax-webfont.woff2") format("woff2"),
+       url("fonts/optiajax-webfont.woff") format("woff");
+}
+@font-face {
+  font-family: "Compagnon";
+  src: url("fonts/Compagnon-Roman.woff2") format("woff2"),
+       url("fonts/Compagnon-Roman.woff") format("woff");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Compagnon";
+  src: url("fonts/Compagnon-Italic.woff2") format("woff2"),
+       url("fonts/Compagnon-Italic.woff") format("woff");
+  font-style: italic;
+}
+
+html, body {
+  margin: 0;
+  background-color: snow;
+}
+h1, h2, h3 {
+  font-family: "Ajax", serif;
+  color: red;
+}
+h1 {
+  font-size: 4em;
+  margin: 0;
+  -webkit-animation: bob 2s infinite ease-in-out alternate;
+  user-select: none;
+}
+h2 {
+  font-size: 2em;
+  margin: 0.5em 0;
+  line-height: 1.1em;
+  user-select: none;
+}
+p {
+  font-family: "Compagnon", monospace;
+  font-size: 18px;
+  margin: 0.5em 0;
+  line-height: 1.2em;
+}
+.header {
+  margin: 40px 0;
+  text-align: center;
+}
+hr.brew {
+  border-top: none;
+  border-bottom: 1px solid black;
+  margin: 0;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.col {
+  flex: 1;
+}
+.col-9 {
+  flex: 9;
+  height: 100%;
+  border-right: 1px solid black;
+  overflow-y: auto;
+}
+
+.col-10 {
+  flex: 5;
+  border-right: 1px solid black;
+  background-color: black;
+}
+
+.item {
+  padding: 2em;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.item-l {
+  padding: 2em 2em 2em calc(4em + 3.4%);
+  border-bottom: 1px solid black;
+}
+
+.item-l p {
+  color: snow;
+}
+
+.item-l p:hover {
+  color: red;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color: black;
+  padding: 2em;
+  z-index: 1;
+  height: auto;
+}
+.show {display:block;}
+.dropdown-content p {color: snow;}
+.dropdown-content p.author {color: red;}
+@-webkit-keyframes bob { 
+    0% {transform: translate(0,5%);}
+    100% {transform: translate(0,-5%);}
+}
+
+@-webkit-keyframes bob-less { 
+    0% {transform: translate(0,2.5%);}
+    100% {transform: translate(0,-2.5%);}
+}

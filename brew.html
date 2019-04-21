@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Some Things Abrewing</title>
+  <link rel="stylesheet" href="css/brew.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <h1>Some Things Abrewing</h1>
+    <p>New Facets of Creative Ethics</p>
+  </div>
+	
+  <hr class="brew">
+  <div class="row">
+    <div class="col-10">
+      <div class="item-l">
+        <h2>Archive</h2>
+        <p>04 03 19</p>
+        <p>03 06 19</p>
+        <p>03 05 19</p>
+        <p>02 08 19</p>
+
+        <p>12 06 18</p>
+        <p>11 12 18</p>
+        <p>10 18 18</p>
+
+        <p>07 11 17</p>
+        
+        <p>...</p>
+      </div>
+    </div>
+    <div class="col-9">
+      <div class="dropdown" onclick="drop(this)">
+        <div class="item">
+          <h2>Who should get the credit for AI art?</h2>
+        </div>
+        <div class="dropdown-content">
+          <p>04 03 19</p>
+          <p class="author">Aaron Hertzmann</p>
+          <p>Over the past few years, many artists have started to use what's called "neural network software" to create works of art.<br>Users input existing images into the software, which has been programmed to analyze them, learn a specific aesthetic and spit out new images that artists can curate. By manipulating the inputs and parameters of these models, artists can produce a range of interesting and evocative images.<br>This work has gained widespread recognition through gallery shows, media coverage and two high-profile art auctions.<br>As an academic researcher, developer of artistic technology and amateur artist, seeing artists embrace new technology to create new forms of expression always thrills me.<br>But, like previous groundbreaking art movements, neural network art raises difficult questions: How do we think of authorship and ownership when these artworks come from the contributions of so many different creative individuals and algorithms? How do we ensure that all the artists involved are treated fairly?</p>
+        </div>
+      </div>
+      <div class="dropdown" onclick="drop(this)">
+        <div class="item">
+          <h2>With AI Art, Process Is More Important Than the Product</h2>
+        </div>
+        <div class="dropdown-content">
+          <p>10 18 18</p>
+          <p class="author">Ahmed Elgammal</p>
+          <p>With AI becoming incorporated into more aspects of our daily lives, from writing to driving, it’s only natural that artists would also start to experiment with artificial intelligence.<br>In fact, Christie’s just sold its first piece of AI art—a blurred face titled “Portrait of Edmond Belamy”—for $432,500.<br>The piece is part of a new wave of AI art created via machine learning. Paris-based artists Hugo Caselles-Dupré, Pierre Fautrel and Gauthier Vernier fed thousands of portraits into an algorithm, “teaching” it the aesthetics of past examples of portraiture. The algorithm then created “Portrait of Edmond Belamy.”</p>
+        </div>
+      </div>
+      <div class="item">
+        <h2>AI-Generated Art Now Looks More Convincingly Human Than Work at Art Basel, Study Says</h2>
+      </div>
+      <div class="item">
+        <h2>Sotheby’s Is Entering the AI Art Fray, Selling a Surreal Artwork by One of the Movement’s Pioneers This Spring</h2>
+      </div>
+    </div>
+    <div class="col-9">
+      <div class="dropdown" onclick="drop(this)">
+        <div class="item">
+          <h2>A never-ending stream of AI art goes up for auction</h2>
+        </div>
+        <div class="dropdown-content">
+          <p>03 05 19</p>
+          <p class="author">James Vincent</p>
+          <p>Training algorithms to generate art is, in some ways, the easy part. You feed them data, they look for patterns, and they do their best to replicate what they’ve seen. But like all automatons, AI systems are tireless and produce a never-ending stream of images. The tricky part, says German AI artist Mario Klingemann, is knowing what to do with it all.<br>“For me, this potential is what makes it both interesting and difficult,” Klingemann tells The Verge. “It feels almost wrong to just pick a single thing [that the program produces]. Because, yes, it can create a lot of images, but it’s more magical to see it at work.”<br>Seeing this process is exactly what Klingemann has achieved with Memories of Passersby I, his video installation that’s due to be auctioned at Sotheby’s this week. This marks the second piece of AI art to be sold at a major auction house. Memories consists of two screens, each using AI to generate a portrait every few seconds. Every image is unique and morphs seamlessly into its successor. It’s like watching a lava lamp made of human faces.</p>
+        </div>
+      </div>
+      <div class="dropdown" onclick="drop(this)">
+        <div class="item">
+          <h2>AI Is Blurring the Definition of Artist</h2>
+        </div>
+        <div class="dropdown-content">
+          <p>12 06 18</p>
+          <p class="author">Ahmed Elgammal</p>
+          <p>With artificial intelligence (AI) becoming incorporated into more aspects of our daily lives, from writing to driving, it’s only natural that artists would also start to experiment with it.<br>Indeed, Christie’s recently sold its first piece of auctioned AI art—a blurred face titled “Portrait of Edmond Belamy”—for $432,500.<br>The piece sold at Christie’s is part of a new wave of AI art created via machine learning. Paris-based artists Hugo Caselles-Dupré, Pierre Fautrel, and Gauthier Vernier fed thousands of portraits into an algorithm, “teaching” it the aesthetics of past examples of portraiture. The algorithm then created “Portrait of Edmond Belamy.”<br>The painting is “not the product of a human mind,” Christie’s noted in its preview. “It was created by artificial intelligence, an algorithm defined by [an] algebraic formula.”</p>
+        </div>
+      </div>
+      <div class="item">
+        <h2>Can AI Create True Art?</h2>
+      </div>
+      <div class="item">
+        <h2>AI-Generated Art Now Looks More Convincingly Human Than Work at Art Basel, Study Says</h2>
+      </div>
+      <div class="item">
+        <h2>AI and Machine Learning Invade a New York Art Gallery</h2>
+      </div>
+    </div>
+    <div class="col"></div>
+</div>
+
+<script>
+  function drop(element) {
+    var content = element.getElementsByClassName('dropdown-content');
+    content[0].classList.toggle("show");
+  };
+</script>
+
+</body>
+</html>
