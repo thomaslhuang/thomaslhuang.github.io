@@ -36,12 +36,14 @@ h2 {
   line-height: 1.1em;
   user-select: none;
 }
+.item-l h2 {-webkit-animation: bob-less 3s infinite ease-in-out alternate;}
 p {
   font-family: "Compagnon", monospace;
   font-size: 18px;
   margin: 0.5em 0;
   line-height: 1.2em;
 }
+.item-l p {cursor: pointer;}
 a {
   text-decoration: none;
   color: red;
@@ -76,6 +78,7 @@ hr.brew {
 }
 
 .item {
+  flex: 1;
   padding: 2em;
   border-bottom: 1px solid black;
   cursor: pointer;
