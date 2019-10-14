@@ -1,18 +1,4 @@
 @font-face {
-    font-family: "HappyTimes";
-	src: url("fonts/happy-times-at-the-ikob-webfont.woff2") format("woff2"),
-         url("fonts/happy-times-at-the-ikob-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-    font-family: "HappyTimes";
-	src: url("fonts/happy-times-at-the-ikob_italic-webfont.woff2") format("woff2"),
-         url("fonts/happy-times-at-the-ikob_italic-webfont.woff") format("woff");
-	font-weight: normal;
-	font-style: italic;
-}
-@font-face {
 	font-family: "Colonia";
 	src: url("fonts/Colonia-Regular_web.woff2") format("woff2"),
 			 url("fonts/Colonia-Regular_web.woff") format("woff");
@@ -20,7 +6,8 @@
 }
 
 body {color: black;}
-h1, h2, h3 {font-family: "HappyTimes", serif;}
+h1, h2, h3 {font-family: "neue-haas-grotesk-display", sans-serif; letter-spacing: 0.5px; font-size: 30px; line-height: 1.3em;}
+h1 {position: fixed;}
 p {font-family: "neue-haas-grotesk-text", sans-serif;}
 a, a:hover {
 	color: black;
@@ -48,33 +35,11 @@ textarea {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   min-width: 400px;
   z-index: 1;
 }
 .dropdown:hover .dropdown-content {display: block;}
-.move-area{/*normally use body*/
-  width: 100vw;
-  height: 100vh;
-}
-.container {
-  width: 100%;
-}
-.eye {
-  position: relative;
-  display: inline-block;
-  border-radius: 50%;
-  height: 45px;
-  width: 45px;
-  background: #CCC;
-}
-.eye:after { /*pupil*/
-  position: absolute;
-  bottom: 22px;
-  right: 14px;
-  width: 22px;
-  height: 22px;
-  background: #000;
-  border-radius: 50%;
-  content: " ";
-}
+
+.container {width: 100%;}
+.container-text {width: 800px;}
