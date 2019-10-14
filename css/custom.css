@@ -9,6 +9,11 @@ body {color: black;}
 h1, h2, h3 {font-family: "neue-haas-grotesk-display", sans-serif; letter-spacing: 0.5px; font-size: 30px; line-height: 1.3em;}
 h1 {position: fixed;}
 p {font-family: "neue-haas-grotesk-text", sans-serif;}
+h2 a, h2 a:hover {
+  color: blue;
+  font-family: "neue-haas-grotesk-display";
+  border-bottom: none;
+}
 a, a:hover {
 	color: black;
 	font-family: "neue-haas-grotesk-text", sans-serif;
