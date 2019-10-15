@@ -27,3 +27,4 @@ img {width: 100%;}
 }
 .dropdown:hover .dropdown-content {display: block;}
 .container-text {margin: 10px 16px; width: 800px;}
+.spacer {padding: 32px 0;}
