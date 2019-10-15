@@ -1,5 +1,5 @@
 @media only screen and (max-width: 550px){
-  body h1, body h2, body h3 {font-family: "neue-haas-grotesk-text"; letter-spacing: normal; font-size: 1em; line-height: normal;}
+  body h1, body h2, body h3 {font-family: "neue-haas-grotesk-text"; letter-spacing: normal; font-size: 1.4em; line-height: normal;}
 }
 @media only screen and (max-width: 832px){
   body .container-text {margin: 10px 16px; width: auto}
