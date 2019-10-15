@@ -1,4 +1,4 @@
-body {color: black; margin: 16px;}
+body {color: black; margin: 0px;}
 h1, h2, h3 {font-family: "neue-haas-grotesk-display", sans-serif; letter-spacing: 0.5px; font-size: 30px; line-height: 1.3em; font-weight: normal;}
 h1 {margin: 0;}
 h2 {margin: 0.5em 0;}
@@ -19,4 +19,4 @@ img {width: 100%;}
   z-index: 1;
 }
 .dropdown:hover .dropdown-content {display: block;}
-.container-text {width: 800px;}
+.container-text {margin: 16px; width: 800px;}
