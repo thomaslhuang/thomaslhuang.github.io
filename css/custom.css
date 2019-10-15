@@ -1,38 +1,12 @@
-@font-face {
-	font-family: "Colonia";
-	src: url("fonts/Colonia-Regular_web.woff2") format("woff2"),
-			 url("fonts/Colonia-Regular_web.woff") format("woff");
-	font-weight: normal;
-}
-
 body {color: black;}
-h1, h2, h3 {font-family: "neue-haas-grotesk-display", sans-serif; letter-spacing: 0.5px; font-size: 30px; line-height: 1.3em;}
-h1 {position: fixed;}
-p {font-family: "neue-haas-grotesk-text", sans-serif;}
-h2 a, h2 a:hover {
-  color: blue;
-  font-family: "neue-haas-grotesk-display";
-  border-bottom: none;
-}
+h1, h2, h3 {font-family: "neue-haas-grotesk-display", sans-serif; letter-spacing: 0.5px; font-size: 30px; line-height: 1.3em; font-weight: normal;}
+h1 {margin: 0;}
+h2 {margin: 0.5em 0;}
 a, a:hover {
-	color: black;
-	font-family: "neue-haas-grotesk-text", sans-serif;
+	color: blue;
 	text-decoration: none;
-	border-bottom: 1.5px solid #CCCCCC;
 }
-textarea {
-	font-family: "Colonia";
-	font-size: 64px;
-	line-height: 1.1em;
-	text-align: center;
-	width: 100%;
-	overflow-x: hidden;
-
-	background: none;
-	border: none;
-	outline: none;
-	resize: none;
-}
+img {width: 100%;}
 .dropdown {
   position: relative;
   display: inline-block;
@@ -45,6 +19,4 @@ textarea {
   z-index: 1;
 }
 .dropdown:hover .dropdown-content {display: block;}
-
-.container {width: 100%;}
 .container-text {width: 800px;}
