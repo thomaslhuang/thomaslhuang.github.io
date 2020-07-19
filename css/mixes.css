@@ -3,11 +3,28 @@
   body .container-text {margin: 10px 16px; width: auto}
 }
 
+@font-face {
+  font-family: "Ajax";
+  src: url("fonts/optiajax-webfont.woff2") format("woff2"),
+       url("fonts/optiajax-webfont.woff") format("woff");
+}
+
 html {background-color: black;}
 body {color: white; margin: 0px;}
-h1, h2, h3 {
+h1 {
+  font-family: "Ajax";
+  font-size: 60px;
+  font-weight: normal;
+  line-height: 0.9em;
+  color: red;
+  position: fixed;
+  right: 32px;
+  top: 20px;
+}
+h2, h3 {
   font-family: "neue-haas-grotesk-display", sans-serif; 
-  letter-spacing: 0.5px; font-size: 30px; 
+  letter-spacing: 0.5px; 
+  font-size: 30px; 
   font-weight: normal; 
   line-height: 1.3em;
   -webkit-font-smoothing: antialiased;
