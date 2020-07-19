@@ -5,7 +5,15 @@
 
 html {background-color: black;}
 body {color: white; margin: 0px;}
-h1, h2, h3 {font-family: "neue-haas-grotesk-display", sans-serif; letter-spacing: 0.5px; font-size: 30px; font-weight: normal; line-height: 1.3em;}
+h1, h2, h3 {
+  font-family: "neue-haas-grotesk-display", sans-serif; 
+  letter-spacing: 0.5px; font-size: 30px; 
+  font-weight: normal; 
+  line-height: 1.3em;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
 h1 {margin: 0;}
 h2 {margin: 16px 0;}
 p {font-family: "neue-haas-grotesk-text";}
