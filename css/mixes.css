@@ -20,6 +20,9 @@ h1 {
   position: fixed;
   right: 32px;
   top: 20px;
+  margin: 0;
+  -webkit-animation: bob 2s infinite ease-in-out alternate;
+  user-select: none;
 }
 h2, h3 {
   font-family: "neue-haas-grotesk-display", sans-serif; 
@@ -31,7 +34,6 @@ h2, h3 {
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
 }
-h1 {margin: 0;}
 h2 {margin: 16px 0;}
 p {font-family: "neue-haas-grotesk-text";}
 ul, ol {font-family: "neue-haas-grotesk-text"; font-variant-numeric: tabular-nums; margin: 0; line-height: 1.3em;}
@@ -55,3 +57,8 @@ img {width: 100%;}
 .dropdown:hover .dropdown-content {display: block;}
 .container-text {margin: 10px 16px; width: 800px;}
 .spacer {padding: 32px 0;}
+
+@-webkit-keyframes bob { 
+    0% {transform: translate(0,5%);}
+    100% {transform: translate(0,-5%);}
+}
