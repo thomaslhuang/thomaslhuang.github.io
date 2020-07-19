@@ -8,6 +8,7 @@ h1, h2, h3 {font-family: "neue-haas-grotesk-display", sans-serif; letter-spacing
 h1 {margin: 0;}
 h2 {margin: 16px 0;}
 p {font-family: "neue-haas-grotesk-text";}
+ul, ol {font-family: "neue-haas-grotesk-text"; font-variant-numeric: tabular-nums; margin: 0; line-height: 1.3em;}
 a, a:hover {
 	color: blue;
 	text-decoration: none;
