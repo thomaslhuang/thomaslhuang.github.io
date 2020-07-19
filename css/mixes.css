@@ -1,0 +1,32 @@
+@media only screen and (max-width: 832px){
+  body h1, body h2, body h3 {font-family: "neue-haas-grotesk-text"; letter-spacing: normal; font-size: 1.4em; line-height: normal;}
+  body .container-text {margin: 10px 16px; width: auto}
+}
+
+html {background-color: black;}
+body {color: white; margin: 0px;}
+h1, h2, h3 {font-family: "neue-haas-grotesk-display", sans-serif; letter-spacing: 0.5px; font-size: 30px; font-weight: normal; line-height: 1.3em;}
+h1 {margin: 0;}
+h2 {margin: 16px 0;}
+p {font-family: "neue-haas-grotesk-text";}
+ul, ol {font-family: "neue-haas-grotesk-text"; font-variant-numeric: tabular-nums; margin: 0; line-height: 1.3em;}
+a, a:hover {
+	color: red;
+	text-decoration: none;
+}
+b {color: #999; font-weight: normal}
+img {width: 100%;}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 400px;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {display: block;}
+.container-text {margin: 10px 16px; width: 800px;}
+.spacer {padding: 32px 0;}
