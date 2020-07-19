@@ -1,6 +1,7 @@
 @media only screen and (max-width: 832px){
   body h1 {position: static; padding-left: 40px; margin-top: 1em;}
   body h2, body h3 {font-family: "neue-haas-grotesk-text"; letter-spacing: normal; font-size: 1.4em; line-height: normal;}
+  body ul {padding:0;}
   body .container-text {margin: 10px 16px; width: auto}
 }
 
