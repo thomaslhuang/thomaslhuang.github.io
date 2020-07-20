@@ -3,6 +3,7 @@
   body h2, body h3 {font-family: "neue-haas-grotesk-text"; letter-spacing: normal; font-size: 1.4em; line-height: normal;}
   body ul {text-indent: -37px; padding-left: 37px;}
   body .container-text {margin: 10px 16px; width: auto}
+  .mobile-break {display: none;}
 }
 
 @font-face {
