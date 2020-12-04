@@ -15,17 +15,21 @@ a, a:hover {
 }
 b {color: #999; font-weight: normal}
 img {width: 100%;}
-.dropdown {
-  position: relative;
-  display: inline-block;
+select {
+  font-family: "neue-haas-grotesk-display", sans-serif; 
+  letter-spacing: 0.5px; 
+  font-size: 30px; 
+  font-weight: normal; 
+  line-height: 1.3em;
+
+  color: blue;
+  border:0px;
+  outline:0px;
 }
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffffff;
-  min-width: 400px;
-  z-index: 1;
-}
-.dropdown:hover .dropdown-content {display: block;}
+#resizing-select {
+  width: 215px;
+} 
+#width-tmp-select{
+ display : none;
+} 
 .container-text {margin: 10px 16px; width: 800px;}
-.spacer {padding: 32px 0;}
