@@ -2,14 +2,8 @@
   body h1, body h2, body h3 {font-family: "neue-haas-grotesk-text"; letter-spacing: normal; font-size: 1.4em; line-height: normal;}
   body .container-text {margin: 10px 16px; width: auto}
   .project:hover .popup {
-    display: block;
-    position: fixed;
-    z-index: 2;
     bottom: 0px;
     width: 100vw;
-
-    color: white;
-    background-color: blue;
   }
 }
 
