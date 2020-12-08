@@ -17,9 +17,8 @@
 <body>
 	<div class="container-text">
 		<h1>Tommy Huang</h1>
-	  <h2>Designer at <a href="https://greendragonoffice.com" target="_blank">Green Dragon Office</a>. Freelance publication, type and web design. Previously for Los&#160;Angeles County Museum of&#160;Art, Metropolitan Museum of&#160;Art, Museum of Contemporary Art Detroit, Detroit Institute of&#160;Arts, Frere-Jones Type, <button onclick="showHide()">+</button></h2>
-	  <div id="clientList">
-	  	<p>Client List<span onclick="showHide()" style="cursor:pointer;float:right;">×</span></p>
+	  <h2>Designer at <a href="https://greendragonoffice.com" target="_blank">Green Dragon Office</a>. Freelance publication, type and web design. Previously for Los&#160;Angeles County Museum of&#160;Art, Metropolitan Museum of&#160;Art, Museum of Contemporary Art Detroit, Detroit Institute of&#160;Arts, Frere-Jones Type, <a onclick="showHide()">...</a></h2>
+	  <div id="clientList" class="flex-parent">
 		  <ul>DelMonico Books • Prestel</ul>
 			<ul>Detroit Institute of&#160;Arts</ul>
 		  <ul>Frere-Jones Type</ul>
@@ -68,21 +67,11 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="js/dragElement.js"></script>
 <script>
-	function getRandomPosition(element) {
-		var x = document.body.offsetHeight-element.clientHeight;
-		var y = document.body.offsetWidth-element.clientWidth;
-		var randomX = Math.floor(Math.random()*x);
-		var randomY = Math.floor(Math.random()*y);
-		return [randomX,randomY];
-	}
 	function showHide() {
 	  var x = document.getElementById("clientList");
 	  if (x.style.display === "block") {
 	    x.style.display = "none";
 	  } else {
-	  	var xy = getRandomPosition(x);
-	    x.style.top = xy[0] + 'px';
-			x.style.left = xy[1] + 'px';
 	    x.style.display = "block";
 	  }
 	}
