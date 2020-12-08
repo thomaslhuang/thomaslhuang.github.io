@@ -12,7 +12,7 @@ h1, h2, h3 {font-family: "neue-haas-grotesk-display", sans-serif; letter-spacing
 h1 {margin: 0;}
 h2 {margin: 16px 0;}
 p {font-family: "neue-haas-grotesk-text";}
-ul, ol {font-family: "neue-haas-grotesk-text"; font-variant-numeric: tabular-nums; margin: 0; line-height: 1.3em;}
+ul, ol {font-family: "neue-haas-grotesk-text"; font-variant-numeric: tabular-nums; margin: 0; padding: 0; line-height: 1.3em;}
 a, a:hover {
 	color: blue;
 	text-decoration: none;
@@ -30,6 +30,20 @@ select {
   border:0px;
   outline:0px;
 }
+#clientList {
+  cursor: move;
+  display: none;
+  margin: 0;
+  padding: 1em;
+  background-color: blue;
+  color: white;
+  position: fixed;
+  z-index: 3;
+  top: 0px;
+  right: 0px;
+  width: 300px;
+}
+#clientList p {margin-top: 0};
 #resizing-select {
   width: 215px;
 } 
@@ -44,11 +58,10 @@ select {
 .project:hover .popup {
   display: block;
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   bottom: 0px;
   right: 0px;
   width: 300px;
-
   color: white;
   background-color: blue;
 }

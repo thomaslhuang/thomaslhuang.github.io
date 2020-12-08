@@ -17,7 +17,24 @@
 <body>
 	<div class="container-text">
 		<h1>Tommy Huang</h1>
-	  <h2>Designer at <a href="https://greendragonoffice.com" target="_blank">Green Dragon Office</a>. Freelance publication, type and web design. Previously for Los&#160;Angeles County Museum of&#160;Art, Metropolitan Museum of&#160;Art, Museum of Contemporary Art Detroit, Detroit Institute of&#160;Arts, Frere-Jones Type <a href="/clientlist.html">[.&#8202;.&#8202;.]</a>.</h2>
+	  <h2>Designer at <a href="https://greendragonoffice.com" target="_blank">Green Dragon Office</a>. Freelance publication, type and web design. Previously for Los&#160;Angeles County Museum of&#160;Art, Metropolitan Museum of&#160;Art, Museum of Contemporary Art Detroit, Detroit Institute of&#160;Arts, Frere-Jones Type, <button onclick="showHide()">+</button></h2>
+	  <div id="clientList">
+	  	<p>Client List<span onclick="showHide()" style="cursor:pointer;float:right;">×</span></p>
+		  <ul>DelMonico Books • Prestel</ul>
+			<ul>Detroit Institute of&#160;Arts</ul>
+		  <ul>Frere-Jones Type</ul>
+		  <ul>Informa</ul>
+	  	<ul>Los Angeles County Museum of&#160;Art</ul>
+	  	<ul>Marciano Art Foundation</ul>
+	  	<ul>Marmol Radziner</ul>
+	  	<ul>Metropolitan Museum of&#160;Art</ul>
+	  	<ul>Mildred Lane Kemper Art Museum</ul>
+	  	<ul>The Morgan Library &&#160;Museum</ul>
+	  	<ul>Museum of Contemporary Art Detroit</ul>
+	  	<ul>REYES | FINN</ul>
+	  	<ul>Pop Culture Collaborative</ul>
+	  	<ul>Princeton Architectural Press</ul>	
+			<ul>Yale Literary Magazine</ul></div>
     <h2><a href="mailto:thomaslhuang@gmail.com" target="_blank">Contact→</a></h2>
 	</div>
 
@@ -44,11 +61,32 @@
 	<div class="project">
 		<div class="popup"><p>2019<br>Mallory XCondensed Ultra Italic<br><br>For Frere-Jones Type. Designed by Tobias Frere-Jones. Contributions by Erin McLaughlin, Aoife Mooney, Nina Stössinger, Fred Shallcrass, Graham Bradley, Tommy Huang, Julia Ma, Tim Ripper, and Flavia Zimbardi</p></div>
 		<div class="carousel" data-flickity='{"freeScroll":true, "wrapAround":true, "pageDots":false, "prevNextButtons":false}'>
-			<img src="img/mallory.png" style="width:50%">
+			<img src="img/mallory_01.png" style="width:50%">
 		</div>
 	</div>
 
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="js/dragElement.js"></script>
+<script>
+	function getRandomPosition(element) {
+		var x = document.body.offsetHeight-element.clientHeight;
+		var y = document.body.offsetWidth-element.clientWidth;
+		var randomX = Math.floor(Math.random()*x);
+		var randomY = Math.floor(Math.random()*y);
+		return [randomX,randomY];
+	}
+	function showHide() {
+	  var x = document.getElementById("clientList");
+	  if (x.style.display === "block") {
+	    x.style.display = "none";
+	  } else {
+	  	var xy = getRandomPosition(x);
+	    x.style.top = xy[0] + 'px';
+			x.style.left = xy[1] + 'px';
+	    x.style.display = "block";
+	  }
+	}
+</script>
 
 </body>
 </html>
