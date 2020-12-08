@@ -32,7 +32,6 @@ select {
   outline:0px;
 }
 #clientList {
-  cursor: move;
   display: none;
   margin: 0;
 }
