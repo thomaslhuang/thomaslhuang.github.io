@@ -1,0 +1,55 @@
+@media only screen and (max-width: 832px){
+  body h1, body h2, body h3 {font-family: "neue-haas-grotesk-text"; letter-spacing: normal; font-size: 1.4em; line-height: normal;}
+  body .container-text {margin: 10px 16px; width: auto}
+  .project:hover .popup {
+    bottom: 0px;
+    width: 100vw;
+  }
+}
+
+body {color: black; margin: 0px;}
+h1, h2, h3 {font-family: "neue-haas-grotesk-display", sans-serif; letter-spacing: 0.5px; font-size: 30px; font-weight: normal; line-height: 1.3em;}
+h1 {margin: 0;}
+h2 {margin: 16px 0;}
+p {font-family: "neue-haas-grotesk-text";}
+ul, ol {font-family: "neue-haas-grotesk-text"; font-variant-numeric: tabular-nums; margin: 0; padding: 0; line-height: 1.3em;}
+a, a:hover {
+  cursor: pointer;
+	color: blue;
+	text-decoration: none;
+}
+b {color: #999; font-weight: normal}
+img {width: 100%;}
+select {
+  font-family: "neue-haas-grotesk-display", sans-serif; 
+  letter-spacing: 0.5px; 
+  font-size: 30px; 
+  font-weight: normal; 
+  line-height: 1.3em;
+
+  color: blue;
+  border:0px;
+  outline:0px;
+}
+#clientList {
+  display: none;
+  margin: 0;
+}
+#clientList p {margin-top: 0};
+#resizing-select {
+  width: 215px;
+} 
+#width-tmp-select{
+ display : none;
+} 
+.container-text {
+  margin: 10px 16px; 
+  width: 800px;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex-container > div {
+  margin: 16px;
+}
